@@ -24,7 +24,7 @@ const MainPanel = () => {
         <br /> <span className="text-DARK-II">SINCE 2020</span>
         <span className="text-ASCENT">.</span>
       </h3>
-      <div className="fle font-semibold text-lg mt-16">
+      <div className="fle font-semibold text-lg mt-8">
         {sociallinks.map((link, index) => (
           <div className="flex gap-1 items-center cursor-pointer">
             <img  src={link.image} className="w-[1.5rem]" alt="" />
