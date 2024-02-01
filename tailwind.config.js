@@ -10,6 +10,9 @@ module.exports = {
         "GRAY-I":"#5F5F5F",
         "WHITE":"#FFFFFF",
         "ASCENT":"#007305",
+      },
+      fontFamily:{
+        'inter' : ['Inter', 'sans-serif']
       }
     },
   },
