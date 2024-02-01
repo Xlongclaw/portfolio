@@ -1,2 +1,3 @@
 import sociallinks from "./sociallinks";
-export {sociallinks}
+import projectsData from "./projectsData";
+export {sociallinks,projectsData}

@@ -17,3 +17,11 @@ code {
     monospace;
 }
 
+.custom-scroll::-webkit-scrollbar-thumb{
+  background: #31ffa6;
+} 
+.custom-scroll::-webkit-scrollbar{
+  background: #000;
+  height: 3px;
+} 
+
