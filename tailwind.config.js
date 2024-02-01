@@ -9,7 +9,8 @@ module.exports = {
         "DARK-III":"#080808",
         "GRAY-I":"#5F5F5F",
         "WHITE":"#FFFFFF",
-        "ASCENT":"#007305",
+        "ASCENT":"#31ffa6",
+        // "ASCENT":"#007305",
       },
       fontFamily:{
         'inter' : ['Inter', 'sans-serif']
