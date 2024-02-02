@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroText = () => {
   return (
-    <div className="cursor-default">
+    <div className="cursor-default  relative z-10">
       <h2 className=" font-semibold text-5xl">
         <span className="text-GRAY-I">HELLO THERE</span>
         <span className="text-ASCENT">,</span>

@@ -5,7 +5,7 @@ import Skills from "./Skills";
 
 const MainPanel = ({ selectedOption }) => {
   return (
-    <section className="bg-DARK-III w-4/5 p-16">
+    <section className="bg-DARK-III w-4/5 p-16 overflow-hidden">
       {selectedOption === 0 ? (
         <MyProjects />
       ) : selectedOption === 1 ? (
