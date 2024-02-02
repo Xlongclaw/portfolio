@@ -35,8 +35,6 @@ const AboutMe = () => {
           <div className="h-[2px] bg-ASCENT/70 w-full"></div>
           <div className="h-[2px] bg-ASCENT/70 w-full"></div>
           <div className="h-[2px] bg-ASCENT/70 w-full"></div>
-
-
         </motion.div>
       </motion.div>
       <HeroText />
@@ -49,15 +47,6 @@ const AboutMe = () => {
         />
         {/* <Icon.AiFillAndroid size={300}/> */}
       </div>
-      {/* <div className="absolute top-0 left-1/3 rotate-45 flex flex-col gap-4">
-        <div className="h-[3px] bg-ASCENT/20 w-[10rem]"></div>
-        <div className="h-[3px] bg-ASCENT/20 w-[20rem]"></div>
-        <div className="h-[3px] bg-ASCENT/40 w-[30rem]"></div>
-        <div className="h-[3px] bg-ASCENT/60 w-[40rem]"></div>
-        <div className="h-[3px] bg-ASCENT/80 w-[30rem]"></div>
-        <div className="h-[3px] bg-ASCENT w-[20rem]"></div>
-        <div className="h-[3px] bg-ASCENT w-[10rem]"></div>
-      </div> */}
     </motion.div>
   );
 };

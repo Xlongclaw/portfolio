@@ -1,15 +1,18 @@
 const sociallinks = [
     {
         image:require('../images/GitHub.png'),
-        name:'GITHUB'
+        name:'GITHUB',
+        link:'github.com/xlongclaw'
     },
     {
         image:require('../images/LinkedIn.png'),
-        name:'LINKEDIN'
+        name:'LINKEDIN',
+        link:"linkedin.com/madhureshverma",
     },
     {
         image:require('../images/Envelope.png'),
-        name:'MAIL'
+        name:'MAIL',
+        link:'xlongclaw@gmail.com'
     },
 ]
 
