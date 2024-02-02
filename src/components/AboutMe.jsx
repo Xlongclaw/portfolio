@@ -4,11 +4,12 @@ import SocialLinks from "./SocialLinks";
 import { motion } from "framer-motion";
 import ProfileBgPattern from "./ProfileBgPattern";
 import LetsTalkBtn from "./LetsTalkBtn";
+import PatternBg from "./PatternBg";
 
 const AboutMe = () => {
   return (
     <motion.div
-      className="w-full relative"
+      className="w-full relative h-full"
       animate={{ opacity: [0, 1], x: [100, 0] }}
       transition={{ duration: 0.5 }}
     >
@@ -28,6 +29,7 @@ const AboutMe = () => {
       <HeroText />
       <SocialLinks />
       <LetsTalkBtn />
+      <PatternBg/>
     </motion.div>
   );
 };

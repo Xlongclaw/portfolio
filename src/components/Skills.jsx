@@ -14,13 +14,7 @@ const Skills = () => {
         <SkillWrapper skillData={skillData[currentSkillIndex]} />
         <TechStack techStack={skillData[currentSkillIndex].techStack} />
       </div>
-      <div className="flex items-center justify-center gap-24 pb-6">
-        {/* {experience.map((org, index) => (
-          <div key={index} className="flex flex-col justify-center items-center w-24">
-            <img src={org.logo} alt="" />
-            <h3>{org.title}</h3>
-          </div>
-        ))} */}
+      <motion.div initial={{opacity:0,scale:0.9}} animate={{opacity:1,scale:1}} transition={{duration:0.5}} className="flex items-center justify-center gap-24 pb-6">
         <motion.div whileTap={{scale:[1,0.7,1]}} className="hover:bg-ASCENT hover:text-black p-4 rounded-br-3xl rounded-tl-3xl bg-DARK-III text-ASCENT cursor-pointer">
             <Icon.BsArrowLeft className="" size={40} />
           </motion.div>
@@ -39,7 +33,7 @@ const Skills = () => {
         <motion.div whileTap={{scale:[1,0.7,1]}} className="hover:bg-ASCENT hover:text-black p-4 rounded-br-3xl rounded-tl-3xl  bg-DARK-III text-ASCENT cursor-pointer">
             <Icon.BsArrowRight className="" size={40} />
           </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

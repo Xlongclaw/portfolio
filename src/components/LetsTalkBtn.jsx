@@ -9,9 +9,9 @@ const LetsTalkBtn = () => {
     <div
       className={` ${
         expand && "bg-ASCENT text-black"
-      } absolute right-0 top-0  flex items-center gap-3 rounded-br-3xl`}
+      } absolute z-10 right-0 top-0  flex items-center gap-3 rounded-br-3xl`}
     >
-      <span
+      <motion.span 
         className="flex items-center gap-3 hover:text-black cursor-pointer hover:bg-ASCENT p-4 transition-all rounded-br-3xl"
         onClick={() => setExpand(!expand)}
       >
@@ -20,7 +20,7 @@ const LetsTalkBtn = () => {
           className="p-2 bg-ASCENT rounded-full text-black"
           size={30}
         />
-      </span>
+      </motion.span>
 
       <motion.div
         animate={
@@ -28,7 +28,8 @@ const LetsTalkBtn = () => {
             ? { opacity: 1, scale: 1 }
             : { opacity: 0, pointerEvents: "none", scale: 0.8 }
         }
-        className={` gap-3 z-20 bg-DARK-III border-2 border-ASCENT w-[20rem] absolute top-0 left-[-20rem] p-8 pt-16 text-WHITE flex flex-col justify-center items-center`}
+        transition={{type:"spring"}}
+        className={` gap-3 z-20 bg-DARK-III border border-ASCENT w-[20rem] absolute top-0 left-[-20rem] p-8 pt-16 text-WHITE flex flex-col justify-center items-center`}
       >
         {/* <h1 className="flex gap-2 items-center text-xs">
           <Icon2.BsPhone size={19} className="text-white" /> +91 8299196300
@@ -36,13 +37,13 @@ const LetsTalkBtn = () => {
         <div className="flex gap-3 w-full items-center">
           <Icon.AiOutlineMail size={25} />
           <input
-            className="bg-DARK-II py-2 text-xs px-3 flex-1 rounded-md"
+            className="bg-DARK-I py-2 text-xs px-3 flex-1 rounded-md"
             type="email"
             placeholder="ENTER YOUR EMAIL"
           />
         </div>
         <textarea
-          className="bg-DARK-II w-full h-[8rem] py-2 text-xs px-3 rounded-md mb-2"
+          className="bg-DARK-I w-full h-[8rem] py-2 text-xs px-3 rounded-md mb-2"
           type="text"
           placeholder="YOUR MESSAGE"
         />

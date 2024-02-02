@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const SkillWrapper = ({ skillData }) => {
   return (
-    <div className="space-y-4 w-1/2 h-full">
+    <motion.div animate={{opacity:1}} initial={{opacity:0}} className="space-y-4 w-1/2 h-full">
       <div className="flex  items-center gap-8 text-ASCENT h-full">
         <div className=" text-WHITE w-full h-full  bg-cover flex items-center  justify-center text-3xl font-bold relative">
           <img
@@ -23,7 +23,7 @@ const SkillWrapper = ({ skillData }) => {
         <div className="w-[5px] h-[5px] bg-WHITE rounded-full"></div>
         <div className="w-[5px] h-[5px] bg-WHITE rounded-full"></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
