@@ -45,7 +45,6 @@ const AboutMe = () => {
           className="p-2 bg-ASCENT rounded-full text-black"
           size={30}
         />
-        {/* <Icon.AiFillAndroid size={300}/> */}
       </div>
     </motion.div>
   );

@@ -23,7 +23,7 @@ const OptionPanel = ({ setSelectedOption, selectedOption }) => {
           selectedOption === 2 ? "text-black bg-ASCENT " : "bg-DARK-III"
         }   w-full h-1/3 flex justify-center items-center border-0 border-ASCENT hover:bg-ASCENT hover:border-[1px] duration-100 transition-all hover:cursor-pointer hover:text-black`}
       >
-        MY HARDCORE SKILLS
+        SKILLS AND EXPERIENCE
       </div>
     </section>
   );
