@@ -1,5 +1,6 @@
 import React from "react";
 import * as Icon from "react-icons/bs";
+import {motion} from 'framer-motion'
 
 const SkillWrapper = ({ skillData }) => {
   return (
@@ -12,9 +13,9 @@ const SkillWrapper = ({ skillData }) => {
             alt=""
           />
           <h3 className="relative">{skillData.skillName}</h3>
-          <div className="bg-ASCENT absolute bottom-[-2rem] right-8 text-black p-4 rounded-br-3xl rounded-tl-3xl border-2 border-ASCENT hover:bg-DARK-III hover:text-ASCENT cursor-pointer">
+          <motion.div whileTap={{scale:[1,0.7,1]}} className="hover:bg-ASCENT absolute bottom-[-2rem] right-8 hover:text-black p-4 rounded-br-3xl rounded-tl-3xl border-2 border-ASCENT bg-DARK-III text-ASCENT cursor-pointer">
             <Icon.BsArrowRight className="" size={40} />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="flex w-full gap-2 justify-center items-center">
