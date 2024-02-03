@@ -13,8 +13,8 @@ const PatternBg = () => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      x:[-1000,0],
-      transition: { repeat: Infinity, duration: 4 },
+      x: [-1000, 0],
+      transition: { repeat: Infinity, duration: 2 },
     }),
   };
 
@@ -25,207 +25,13 @@ const PatternBg = () => {
       animate="visible"
       className="absolute flex flex-col w-48 gap-2 bottom-[0rem] right-0 -rotate-45 "
     >
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
-      <motion.div
-        variants={child}
-        className="h-[2px] bg-DARK-I/100 w-[100rem]"
-      ></motion.div>
+      {Array.from({length:50},() => (
+        <motion.div
+          variants={child}
+          className="h-[2px] bg-DARK-I/100 w-[100rem]"
+        ></motion.div>
+      ))}
+      
     </motion.div>
   );
 };
