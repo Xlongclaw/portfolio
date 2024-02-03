@@ -28,7 +28,7 @@ const PatternBg = () => {
       {Array.from({length:50},() => (
         <motion.div
           variants={child}
-          className="h-[2px] bg-DARK-I/100 w-[100rem]"
+          className="h-[2px] bg-DARK-I/90 w-[100rem] opacity-0"
         ></motion.div>
       ))}
       
