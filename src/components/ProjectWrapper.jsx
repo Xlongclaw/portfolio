@@ -1,9 +1,30 @@
 import React from "react";
 import * as Icon from 'react-icons/io'
+import {motion} from 'framer-motion'
 
 const ProjectWrapper = ({ project }) => {
+  const childVarient = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: 200,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+  };
   return (
-    <div className="w-[25rem] h-full ">
+    <motion.div variants={childVarient} className="w-[25rem] h-full ">
       <img
         src={project.image}
         className="object-cover object-left h-[85%]"
@@ -21,7 +42,7 @@ const ProjectWrapper = ({ project }) => {
           <Icon.IoMdArrowDropright size={20}/>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

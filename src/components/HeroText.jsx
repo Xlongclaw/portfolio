@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import AnimatedTextWord from "./AnimatedTextWord";
-import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 const HeroText = () => {
   return (

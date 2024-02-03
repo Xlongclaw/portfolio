@@ -4,10 +4,19 @@ import ProjectWrapper from "./ProjectWrapper";
 import { motion } from "framer-motion";
 
 const MyProjects = () => {
+  const parentVarient = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.12, delayChildren: 0.1 * i },
+    }),
+  };
+
   return (
     <motion.div
-    animate={{ opacity: [0, 1], x:[100,0]}}
-    transition={{ duration: 0.5 }}
+      variants={parentVarient}
+      initial="hidden"
+      animate="visible"
       className="grid relative w-full h-full gap-10 grid-flow-col overflow-x-scroll custom-scroll pb-4"
     >
       {projectsData.map((project, i) => (
