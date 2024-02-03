@@ -33,34 +33,64 @@ const LetsTalkBtn = () => {
             : { opacity: 0, pointerEvents: "none", scale: 0.8 }
         }
         transition={{ type: "spring" }}
-        className={` gap-3 z-20 bg-DARK-III border opacity-0 border-ASCENT w-[20rem] absolute  top-[62px] lef-[-20rem] right-[-2rem] p-8 pt-16 text-WHITE flex flex-col justify-center items-center`}
+        className={` gap-3 z-20 bg-DARK-III border opacity-0 border-ASCENT w-[44rem] absolute  top-[62px] lef-[-20rem] right-[-2rem] p-8 pt-16 text-WHITE flex justify-center items-center`}
       >
-        {/* <div className="w-full bg-DARK-I p-4 flex justify-center items-center gap-2 rounded-lg">
-          <img className="w-6" src={require("../images/resume.png")} alt="" />
-          <h3 className="text-sm font-semibold">Download Resume</h3>
-        </div> */}
-        {/* <div className="flex flex-wrap gap-2">
-          {letstalklinks.map((link, i) => (
-            <img className="w-14 p-3 borde border-ASCENT" src={link.image} alt="" />
-          ))}
-        </div> */}
-        <div className="flex w-full items-center px-2 gap-2">
-          <Icon.AiOutlineMail className="p-2 bg-ASCENT text-black rounded-br-xl" size={40} />
-          <input
-            className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
-            type="email"
-            placeholder="ENTER YOUR EMAIL"
-          />
+        <div>
+          <span>
+            <h2 className="text-lg font-semibold">Hello,</h2>
+            <h2 className="text-sm font-mediu text-WHITE/50 ">
+              As someone who is passionate about User Interface, I thoroughly
+              enjoy crafting and building web designs. My creations are not only
+              visually appealing but also highly interactive, delivering a
+              seamless experience. I hope my work resonates with you.
+            </h2>
+            <div className="flex gap-2 justify-between">
+              <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
+                <span className="text-ASCENT">RESUME</span>
+                <Icon2.BsDownload size={25} />
+              </button>
+
+              <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
+                <span className="text-ASCENT">PROJECTS</span>
+                <Icon2.BsArrowRight size={25} />
+              </button>
+            </div>
+            <div className="flex mt-4 text-WHITE/70">
+              <span className="flex text-xs items-center gap-1 hover:bg-ASCENT hover:text-black p-2 cursor-pointer">
+                <Icon.AiOutlineDribbble size={25} /> DRIBBLE
+              </span>
+              <span className="flex text-xs items-center gap-1 hover:bg-ASCENT hover:text-black p-2 cursor-pointer">
+                <Icon.AiOutlineFacebook size={25} /> FACEBOOK
+              </span>
+              <span className="flex text-xs items-center gap-1 hover:bg-ASCENT hover:text-black p-2 cursor-pointer">
+                <Icon.AiOutlineInstagram size={25} /> INSTAGRAM
+              </span>
+            </div>
+          </span>
         </div>
-        <textarea
-          className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[8rem] py-2 text-xs px-3 mb-2"
-          type="text"
-          placeholder="YOUR MESSAGE"
-        />
-        <h3 className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 ">
-          <Icon2.BsSendFill size={20} className="" />
-          SEND
-        </h3>
+        <div className="w-[2px] bg-ASCENT/50 h-[16rem] mx-4"></div>
+        <div className="flex flex-col gap-3">
+          <div className="flex w-full items-center px-2 gap-2">
+            <Icon.AiOutlineMail
+              className="p-2 bg-ASCENT text-black rounded-br-xl"
+              size={40}
+            />
+            <input
+              className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
+              type="email"
+              placeholder="ENTER YOUR EMAIL"
+            />
+          </div>
+          <textarea
+            className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[8rem] py-2 text-xs px-3 mb-2"
+            type="text"
+            placeholder="YOUR MESSAGE"
+          />
+          <h3 className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 ">
+            <Icon2.BsSendFill size={20} className="" />
+            SEND
+          </h3>
+        </div>
         <motion.div
           onClick={() => setExpand(false)}
           whileHover={{ scale: 1.1 }}
