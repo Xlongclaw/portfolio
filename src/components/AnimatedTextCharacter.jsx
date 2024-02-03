@@ -10,7 +10,7 @@ const AnimatedTextCharacter = ({ text }) => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.03, delayChildren: 0.04 * i },
+      transition: { staggerChildren: 0.03, delayChildren: 0.5 },
     }),
   };
 
@@ -40,7 +40,7 @@ const AnimatedTextCharacter = ({ text }) => {
 
   return (
     <motion.span
-      style={{ overflow: "hidden", display: "flex" }}
+      className="overflow-hidden inline-flex"
       variants={container}
       initial="hidden"
       animate="visible"

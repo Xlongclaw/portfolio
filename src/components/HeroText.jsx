@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedTextWord from "./AnimatedTextWord";
+import AnimatedTextSlideDown from "./AnimatedTextSlideDown";
 
 const HeroText = () => {
   return (
@@ -13,8 +14,10 @@ const HeroText = () => {
       </h3>
       <h3 className="font-bold text-7xl tracking-[1px] mt-6">
         <span className="text-DARK-II">I AM INTO</span>{" "}
-        <span>UI/UX DESIGN</span> <br /> <span className="text-DARK-II">AND </span>
-          <span>DEVELOPMENT</span>
+        <AnimatedTextSlideDown/>
+         <br />
+        <span className="text-DARK-II">AND </span>
+        <span>DEVELOPMENT</span>
         <br /> <span className="text-DARK-II">SINCE 2022</span>
         <span className="text-ASCENT">.</span>
       </h3>

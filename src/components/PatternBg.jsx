@@ -14,7 +14,7 @@ const PatternBg = () => {
     visible: (i = 1) => ({
       opacity: 1,
       x:[-1000,0],
-      transition: { repeat: Infinity, duration: 2 },
+      transition: { repeat: Infinity, duration: 4 },
     }),
   };
 
