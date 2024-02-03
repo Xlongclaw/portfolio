@@ -29,7 +29,10 @@ const AboutMe = () => {
       <HeroText />
       <SocialLinks />
       <LetsTalkBtn />
-      <PatternBg/>
+      <PatternBg />
+      {/* <div className="absolute text-DARK-I right-0 bottom-[-2rem] leading-[4px]">
+        <h1 className="text-9xl font-bold">LONGCLAW</h1>
+      </div> */}
     </motion.div>
   );
 };
