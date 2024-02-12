@@ -9,7 +9,7 @@ const LetsTalkBtn = () => {
   return (
     <div
       className={` 
-       absolute z-10 right-0 top-0  flex items-center gap-3 rounded-tr-3xl`}
+       absolute z-10 hidden right-0 top-0  sm:flex items-center gap-3 rounded-tr-3xl`}
     >
       <motion.span
         className={` ${

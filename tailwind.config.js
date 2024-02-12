@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "",
-        xxs: "",
+        xs: "440px",
       },
       colors: {
         "DARK-I": "#151414",

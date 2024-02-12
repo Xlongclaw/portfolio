@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ProfileBgPattern from "./ProfileBgPattern";
 import LetsTalkBtn from "./LetsTalkBtn";
 import PatternBg from "./PatternBg";
+import LetsTalkBtnPhone from "./LetsTalkBtnPhone";
 
 const AboutMe = () => {
   return (
@@ -16,10 +17,10 @@ const AboutMe = () => {
       <motion.div
         whileHover={{ scale: 1.3, x: 30 }}
         transition={{ type: "spring", stiffness: 80 }}
-        className="relative w-48"
+        className="relative sm:w-48 w-44"
       >
         <img
-          className="pb-8 w-48 relative z-10
+          className="pb-8 sm:w-48 w-44 relative z-20
         "
           src={require("../images/Profile-Image.png")}
           alt=""
@@ -29,6 +30,7 @@ const AboutMe = () => {
       <HeroText />
       <SocialLinks />
       <LetsTalkBtn />
+      <LetsTalkBtnPhone />
       <PatternBg />
       {/* <div className="absolute text-DARK-I right-0 bottom-[-2rem] leading-[4px]">
         <h1 className="text-9xl font-bold">LONGCLAW</h1>
