@@ -82,7 +82,7 @@ const LetsTalkBtn = () => {
             />
           </div>
           <textarea
-            className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[8rem] py-2 text-xs px-3 mb-2"
+            className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[12rem] py-2 text-xs px-3 mb-2"
             type="text"
             placeholder="YOUR MESSAGE"
           />

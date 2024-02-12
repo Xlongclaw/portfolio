@@ -12,10 +12,11 @@ const HeroText = () => {
       <h3 className="font-semibold text-3xl tracking-wider">
         <AnimatedTextWord text={"MY NAME IS MADHURESH"} />
       </h3>
-      <h3 className="font-bold text-7xl tracking-[1px] mt-6">
+      <h3 className="font-bold xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl tracking-[1px] mt-6">
         <span className="text-DARK-II">I AM INTO</span>{" "}
-        <AnimatedTextSlideDown/>
-         <br />
+        <span className="text-WHITE">UI/UX DESIGN</span>{" "}
+        {/* <AnimatedTextSlideDown /> */}
+        <br />
         <span className="text-DARK-II">AND </span>
         <span>DEVELOPMENT</span>
         <br /> <span className="text-DARK-II">SINCE 2022</span>
