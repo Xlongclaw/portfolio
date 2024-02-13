@@ -17,7 +17,8 @@ const MyProjects = () => {
       variants={parentVarient}
       initial="hidden"
       animate="visible"
-      className="grid relative w-full h-full gap-10 grid-flow-col overflow-x-scroll custom-scroll pb-4"
+      className="grid relative w-full h-full sm:gap-10 gap-14 lg:grid-flow-col lg:overflow-x-scroll lg:overflow-y-hidden
+       overflow-y-scroll md:grid-flow-row sm:pr-0 pr-1 custom-scroll pb-4"
     >
       {projectsData.map((project, i) => (
         <ProjectWrapper key={i} project={project} />
