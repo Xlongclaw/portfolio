@@ -35,7 +35,7 @@ const ProjectWrapper = ({ project }) => {
       />
       <div className="flex mt-2">
         <button
-          className="bg-ASCENT border-ASCENT md:rounded-br-[3rem] sm:rounded-br-[2rem] rounded-br-[1.5rem] border-2 sm:mt-[-32px] mt-[-18px] flex justify-center
+          className="bg-ASCENT border-ASCENT md:rounded-br-[3rem] sm:rounded-br-[2rem] rounded-br-[1.5rem] border-2 sm:mt-[-32px] mt-[-14px] flex justify-center
          items-center text-black md:h-[6rem] md:w-[6rem] sm:h-[5rem] sm:w-[5rem] h-[4rem] w-[4rem] font-bold text-sm"
         >
           {/* <img src={require('../images/GitHub.png')} alt="" /> */}
