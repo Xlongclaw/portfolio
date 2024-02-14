@@ -11,8 +11,8 @@ import skillsData from "../constants/skillsData";
 const Skills = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   return (
-    <div className="w-full flex sm:p-4 p-0 h-full tracking-[1px]">
-      <div className="flex-col flex gap-6 overflow-y-scroll">
+    <div className=" flex sm:p-4 p-0 tracking-[1px] flex-col relative sm:top-0 top-[-2.8rem] w-full sm:h-full h-[116%]">
+      <div className="flex-col flex gap-6 overflow-y-scroll hide-scroll">
         <h4 className="text-ASCENT text-xs font-medium mb-4">
           FRONTEND DEVELOPMENT
         </h4>
@@ -26,6 +26,9 @@ const Skills = () => {
             }}
           />
         ))}
+      </div>
+      <div className="flex justify-center items-center text-ASCENT pt-4">
+        <Icon.BsChevronDoubleDown size={20} />
       </div>
       <div></div>
     </div>

@@ -20,6 +20,9 @@ code {
 .custom-scroll::-webkit-scrollbar-thumb {
   background: #31ffa6;
 }
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
 .custom-scroll::-webkit-scrollbar {
   background: #000;
   height: 3px;
