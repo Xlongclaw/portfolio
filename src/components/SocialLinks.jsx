@@ -12,14 +12,14 @@ const SocialLinks = () => {
           onMouseEnter={() => setDisplayLink(index)}
           onMouseLeave={() => setDisplayLink(null)}
           href={link.link}
-          className="flex xs:flex-row flex-col gap-2 py-1 cursor-pointer"
+          className="flex gap-8 py-1 items-center cursor-pointer "
         >
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center hover:text-WHITE">
             <img src={link.image} className="w-[1.5rem]" alt="" />
-            <span className="text-WHITE/60 hover:text-WHITE">{link.name}</span>
+            <span className="">{link.name}</span>
           </div>
           {displayLink === index && (
-            <span className="text-ASCENT xs:text-base text-xs sm:font-semibold font-normal flex items-center gap-2">
+            <span className="text-ASCENT sm:flex hidden xs:text-base text-xs sm:font-semibold font-normal items-center gap-2">
               <Icon.BsArrowRight />
               <h4>{link.link}</h4>
             </span>

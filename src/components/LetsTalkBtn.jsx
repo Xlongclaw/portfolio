@@ -33,7 +33,7 @@ const LetsTalkBtn = () => {
             : { opacity: 0, pointerEvents: "none", scale: 0.8 }
         }
         transition={{ type: "spring" }}
-        className={` gap-3 z-20 bg-DARK-III border opacity-0 border-ASCENT w-[44rem] absolute  top-[62px] lef-[-20rem] right-[-2rem] p-8 pt-16 text-WHITE flex justify-center items-center`}
+        className={` gap-3 z-[100] bg-DARK-III border opacity-0 border-ASCENT w-[44rem] absolute  top-[62px] lef-[-20rem] right-[-2rem] p-8 pt-16 text-WHITE flex justify-center items-center`}
       >
         <div>
           <span>

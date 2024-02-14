@@ -17,7 +17,7 @@ const AboutMe = () => {
       <motion.div
         whileHover={{ scale: 1.3, x: 30 }}
         transition={{ type: "spring", stiffness: 80 }}
-        className="relative sm:w-48 w-44"
+        className="relative sm:w-48 w-44 z-10"
       >
         <img
           className="pb-8 sm:w-48 w-44 relative z-20
