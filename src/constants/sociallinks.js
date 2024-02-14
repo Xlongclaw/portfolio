@@ -7,7 +7,7 @@ const sociallinks = [
   {
     image: require("../images/LinkedIn.png"),
     name: "LINKEDIN",
-    link: "https://linkedin.com/madhuresh",
+    link: "https://linkedin.com/in/madhuresh-verma-bb9633238",
   },
   {
     image: require("../images/Envelope.png"),

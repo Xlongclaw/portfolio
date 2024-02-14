@@ -6,7 +6,7 @@ import * as Icon from "react-icons/bs";
 const SocialLinks = () => {
   const [displayLink, setDisplayLink] = useState(null);
   return (
-    <div className="relative z-10 sm:font-semibold font-bold  text-sm mt-8 w-48 ">
+    <div className="relative z-10 sm:font-semibold font-bold  text-sm mt-8 ">
       {sociallinks.map((link, index) => (
         <motion.a
           onMouseEnter={() => setDisplayLink(index)}
