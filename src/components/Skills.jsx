@@ -11,14 +11,19 @@ import skillsData from "../constants/skillsData";
 const Skills = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   return (
-    <div className="w-full flex  h-full">
-      <div className="flex-col flex gap-8 flex-wrap">
-        <h4 className="text-ASCENT text-sm mb-8">FRONTEND DEVELOPMENT</h4>
+    <div className="w-full flex sm:p-4 p-0 h-full tracking-[1px]">
+      <div className="flex-col flex gap-6 overflow-y-scroll">
+        <h4 className="text-ASCENT text-xs font-medium mb-4">
+          FRONTEND DEVELOPMENT
+        </h4>
         {skillsData.map((skillData, index) => (
           <SkillContainer
             key={index}
             skillData={skillData}
             expand={index === currentSkillIndex}
+            onClick={() => {
+              setCurrentSkillIndex(index);
+            }}
           />
         ))}
       </div>
