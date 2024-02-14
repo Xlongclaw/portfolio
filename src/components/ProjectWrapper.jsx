@@ -26,7 +26,7 @@ const ProjectWrapper = ({ project }) => {
   return (
     <motion.div
       variants={childVarient}
-      className="lg:w-[20rem] h-[100%] lg:h-full "
+      className="lg:w-[25rem] h-[100%] lg:h-full "
     >
       <img
         src={project.image}
