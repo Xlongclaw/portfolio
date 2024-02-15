@@ -12,6 +12,12 @@ const projectsData = [
     image: require("../images/proj5.png"),
   },
   {
+    name: "Artigence",
+    githubLink: "https://github.com/Xlongclaw/artigence",
+    link: "https://artigence-v1.onrender.com/",
+    image: require("../images/proj14.png"),
+  },
+  {
     name: "Portfolio",
     githubLink: "https://github.com/Xlongclaw/portfolio",
     link: "https://xlc-portfolio.onrender.com/",
@@ -19,8 +25,8 @@ const projectsData = [
   },
   {
     name: "The Food co.",
-    githubLink: "",
-    link: "",
+    githubLink: "https://github.com/Xlongclaw/the-food-co",
+    link: "https://the-food-co.onrender.com/",
     image: require("../images/proj12.png"),
   },
   {
