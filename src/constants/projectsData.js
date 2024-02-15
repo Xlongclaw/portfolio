@@ -1,20 +1,20 @@
 const projectsData = [
   {
     name: "VentureLand",
-    githubLink: "",
-    link: "",
+    githubLink: "https://github.com/Xlongclaw/travel-app",
+    link: "https://travel-app-next.onrender.com/",
     image: require("../images/proj2.png"),
   },
   {
     name: "Notes",
-    githubLink: "",
+    githubLink: "https://github.com/Xlongclaw/next-mongo-crud",
     link: "",
     image: require("../images/proj5.png"),
   },
   {
     name: "Portfolio",
-    githubLink: "",
-    link: "",
+    githubLink: "https://github.com/Xlongclaw/portfolio",
+    link: "https://xlc-portfolio.onrender.com/",
     image: require("../images/proj10.png"),
   },
   {
@@ -25,15 +25,15 @@ const projectsData = [
   },
   {
     name: "Travel",
-    githubLink: "",
-    link: "",
+    githubLink: "https://github.com/Xlongclaw/travel-app",
+    link: "https://travel-app-next.onrender.com/",
     image: require("../images/proj11.png"),
   },
   {
     name: "Style Cave",
-    githubLink: "",
-    link: "",
-    image: require("../images/project3.png"),
+    githubLink: "https://github.com/Xlongclaw/portfolio-web-master",
+    link: "https://longclaw-portfolio.onrender.com/",
+    image: require("../images/proj13.png"),
   },
 ];
 

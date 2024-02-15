@@ -14,9 +14,13 @@ const ProjectWrapperNew = ({ project }) => {
           {project.name.toUpperCase()}
         </h3>
         <div className="flex sm:h-[3.5rem] h-[3rem] w-full sm:w-auto gap-1">
-          <BsGithub className="border border-WHITE/10 flex sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4" />
-          <BsDatabase className="border border-WHITE/10 flex sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4" />
-          <BsChevronRight className="border border-WHITE/10 flex sm:w-[3.5rem] w-1/3 h-full p-4 sm:p-5" />
+          <a href={project.githubLink}>
+            <BsGithub className="border border-WHITE/10 hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 flex sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4" />
+          </a>
+          <BsDatabase className="border border-WHITE/10 flex hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4" />
+          <a href={project.link}>
+            <BsChevronRight className="border border-WHITE/10 hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 flex sm:w-[3.5rem] w-1/3 h-full p-4 sm:p-5" />
+          </a>
         </div>
       </div>
     </div>
