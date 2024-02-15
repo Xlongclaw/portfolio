@@ -30,7 +30,7 @@ const ProjectWrapper = ({ project }) => {
     >
       <img
         src={project.image}
-        className="object-cover object-left h-[85%]"
+        className="object-cover border border-WHITE/10 object-left h-[85%]"
         alt=""
       />
       <div className="flex mt-2">
