@@ -13,7 +13,6 @@ const LetsTalkBtn = () => {
   const [messageSentToast, setMessageSentToast] = useState(false);
   const showToast = () => {
     setMessageSentToast(true);
-
     return setTimeout(() => setMessageSentToast(false), 3000);
   };
   return (
@@ -87,12 +86,14 @@ const LetsTalkBtn = () => {
             />
             <input
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
               className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
               type="email"
               placeholder="ENTER YOUR EMAIL"
             />
           </div>
           <textarea
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[12rem] py-2 text-xs px-3 mb-2"
             type="text"
@@ -100,13 +101,19 @@ const LetsTalkBtn = () => {
           />
           <h3
             onClick={() => {
-              emailjs.send(
-                process.env.REACT_APP_EMAIL_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                { email: email, message: message },
-                process.env.REACT_APP_USER_ID
-              );
-              showToast();
+              emailjs
+                .send(
+                  process.env.REACT_APP_EMAIL_SERVICE_ID,
+                  process.env.REACT_APP_TEMPLATE_ID,
+                  { email: email, message: message },
+                  process.env.REACT_APP_USER_ID
+                )
+                .then(() => {
+                  showToast();
+                  setEmail("");
+                  setMessage("");
+                })
+                .catch((error) => console.log(error));
             }}
             className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
           >
