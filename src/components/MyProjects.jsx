@@ -1,6 +1,5 @@
 import React from "react";
 import { projectsData } from "../constants";
-import ProjectWrapper from "./ProjectWrapper";
 import { motion } from "framer-motion";
 import ProjectWrapperNew from "./ProjectWrapperNew";
 

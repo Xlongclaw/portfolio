@@ -104,6 +104,8 @@ const AboutMe = () => {
                     size={40}
                   />
                   <input
+                    autoComplete="email"
+                    name="email"
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
                     type="email"
@@ -111,6 +113,8 @@ const AboutMe = () => {
                   />
                 </div>
                 <textarea
+                  autoComplete="message"
+                  name="message"
                   onChange={(e) => setMessage(e.target.value)}
                   className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[8rem] py-2 text-xs px-3 mb-2"
                   type="text"

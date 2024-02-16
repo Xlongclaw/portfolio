@@ -9,6 +9,7 @@ const SocialLinks = () => {
     <div className="relative z-10 sm:font-semibold font-bold  text-sm mt-8 ">
       {sociallinks.map((link, index) => (
         <motion.a
+          key={index}
           onMouseEnter={() => setDisplayLink(index)}
           onMouseLeave={() => setDisplayLink(null)}
           href={link.link}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import * as Icon from "react-icons/ai";
 import * as Icon2 from "react-icons/bs";
 import { motion } from "framer-motion";
-import letstalklinks from "../constants/letstalklinks";
 import emailjs from "emailjs-com";
 import Toast from "./Toast";
 
@@ -85,6 +84,8 @@ const LetsTalkBtn = () => {
               size={40}
             />
             <input
+              name="email"
+              autoComplete="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
@@ -93,6 +94,8 @@ const LetsTalkBtn = () => {
             />
           </div>
           <textarea
+            name="message"
+            autoComplete="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[12rem] py-2 text-xs px-3 mb-2"

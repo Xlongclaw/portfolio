@@ -26,8 +26,9 @@ const PatternBg = () => {
       animate="visible"
       className="absolute flex flex-col w-48 gap-2 bottom-[-10rem] sm:bottom-[0rem] right-0 -rotate-45 "
     >
-      {Array.from({ length: 50 }, () => (
+      {Array.from({ length: 50 }, (_, i) => (
         <motion.div
+          key={`LINE_${i}`}
           variants={child}
           className="h-[2px] bg-DARK-I/90 w-[100rem] opacity-0"
         ></motion.div>
