@@ -6,6 +6,8 @@ import ProfileBgPattern from "./ProfileBgPattern";
 import LetsTalkBtn from "./LetsTalkBtn";
 import PatternBg from "./PatternBg";
 import LetsTalkBtnPhone from "./LetsTalkBtnPhone";
+import emailjs from "emailjs-com";
+
 import {
   BsArrowLeft,
   BsArrowRight,
@@ -18,9 +20,13 @@ import {
   AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
+import Toast from "./Toast";
 
 const AboutMe = () => {
   const [letsTalk, setLetsTalk] = useState(false);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageSentToast, setMessageSentToast] = useState(false);
   return (
     <motion.div
       className="w-full relative h-full"
@@ -93,17 +99,30 @@ const AboutMe = () => {
                     size={40}
                   />
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
                     type="email"
                     placeholder="ENTER YOUR EMAIL"
                   />
                 </div>
                 <textarea
+                  onChange={(e) => setMessage(e.target.value)}
                   className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[8rem] py-2 text-xs px-3 mb-2"
                   type="text"
                   placeholder="YOUR MESSAGE"
                 />
-                <h3 className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 ">
+                <h3
+                  onClick={() => {
+                    emailjs.send(
+                      process.env.REACT_APP_EMAIL_SERVICE_ID,
+                      process.env.REACT_APP_TEMPLATE_ID,
+                      { email: email, message: message },
+                      process.env.REACT_APP_USER_ID
+                    );
+                    return setMessageSentToast(true);
+                  }}
+                  className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
+                >
                   <BsSendFill size={20} className="" />
                   SEND
                 </h3>
@@ -112,6 +131,7 @@ const AboutMe = () => {
           </div>
         </>
       )}
+      <Toast visible={messageSentToast} />
       {/* <div className="absolute text-DARK-I right-0 bottom-[-2rem] leading-[4px]">
         <h1 className="text-9xl font-bold">LONGCLAW</h1>
       </div> */}

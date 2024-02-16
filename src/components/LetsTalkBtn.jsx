@@ -3,9 +3,12 @@ import * as Icon from "react-icons/ai";
 import * as Icon2 from "react-icons/bs";
 import { motion } from "framer-motion";
 import letstalklinks from "../constants/letstalklinks";
+import emailjs from "emailjs-com";
 
 const LetsTalkBtn = () => {
   const [expand, setExpand] = useState(false);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div
       className={` 
@@ -76,17 +79,29 @@ const LetsTalkBtn = () => {
               size={40}
             />
             <input
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-DARK-III  border border-ASCENT/40 border-dashed  py-2 text-xs px-3 flex-1 rounded-md"
               type="email"
               placeholder="ENTER YOUR EMAIL"
             />
           </div>
           <textarea
+            onChange={(e) => setMessage(e.target.value)}
             className="bg-DARK-III border border-ASCENT/30 rounded-none w-full h-[12rem] py-2 text-xs px-3 mb-2"
             type="text"
             placeholder="YOUR MESSAGE"
           />
-          <h3 className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 ">
+          <h3
+            onClick={() => {
+              emailjs.send(
+                process.env.REACT_APP_EMAIL_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                { email: email, message: message },
+                process.env.REACT_APP_USER_ID
+              );
+            }}
+            className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
+          >
             <Icon2.BsSendFill size={20} className="" />
             SEND
           </h3>

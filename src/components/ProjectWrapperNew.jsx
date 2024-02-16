@@ -22,7 +22,7 @@ const ProjectWrapperNew = ({ project }) => {
           </a>
           <BsDatabase className="border border-WHITE/10 flex hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4" />
           <a
-            className="border border-WHITE/10 hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 flex sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4 justify-center"
+            className="border border-WHITE/10 hover:bg-ASCENT hover:text-DARK-III transition-all duration-500 flex sm:w-[3.5rem] w-1/3 h-full sm:p-5 p-4 justify-centerl"
             href={project.link}
           >
             <BsChevronRight className="" />
