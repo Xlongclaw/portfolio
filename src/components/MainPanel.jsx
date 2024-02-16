@@ -18,6 +18,7 @@ const MainPanel = ({ selectedOption }) => {
       {selectedOption === 0 ? (
         <>
           <MyProjects />
+
           {/* <BsCaretDown
             className="text-xl mt-8 p-1 ml-auto text-ASCENT"
             size={25}

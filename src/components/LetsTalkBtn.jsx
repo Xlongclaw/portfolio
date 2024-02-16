@@ -4,11 +4,18 @@ import * as Icon2 from "react-icons/bs";
 import { motion } from "framer-motion";
 import letstalklinks from "../constants/letstalklinks";
 import emailjs from "emailjs-com";
+import Toast from "./Toast";
 
 const LetsTalkBtn = () => {
   const [expand, setExpand] = useState(false);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [messageSentToast, setMessageSentToast] = useState(false);
+  const showToast = () => {
+    setMessageSentToast(true);
+
+    return setTimeout(() => setMessageSentToast(false), 3000);
+  };
   return (
     <div
       className={` 
@@ -99,6 +106,7 @@ const LetsTalkBtn = () => {
                 { email: email, message: message },
                 process.env.REACT_APP_USER_ID
               );
+              showToast();
             }}
             className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
           >
@@ -114,6 +122,7 @@ const LetsTalkBtn = () => {
         >
           <Icon.AiOutlineClose size={25} />
         </motion.div>
+        <Toast visible={messageSentToast} />
       </motion.div>
     </div>
   );

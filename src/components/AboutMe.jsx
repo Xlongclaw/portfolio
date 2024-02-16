@@ -27,6 +27,11 @@ const AboutMe = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [messageSentToast, setMessageSentToast] = useState(false);
+  const showToast = () => {
+    setMessageSentToast(true);
+
+    return setTimeout(() => setMessageSentToast(false), 3000);
+  };
   return (
     <motion.div
       className="w-full relative h-full"
@@ -111,7 +116,7 @@ const AboutMe = () => {
                   type="text"
                   placeholder="YOUR MESSAGE"
                 />
-                <h3
+                <div
                   onClick={() => {
                     emailjs.send(
                       process.env.REACT_APP_EMAIL_SERVICE_ID,
@@ -119,13 +124,13 @@ const AboutMe = () => {
                       { email: email, message: message },
                       process.env.REACT_APP_USER_ID
                     );
-                    return setMessageSentToast(true);
+                    showToast();
                   }}
-                  className="hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
+                  className=" relative z-50 hover:bg-ASCENT text-ASCENT cursor-pointer hover:text-black py-2 px-3 rounded- flex text-sm font-semibold gap-2 "
                 >
                   <BsSendFill size={20} className="" />
                   SEND
-                </h3>
+                </div>
               </div>
             </span>
           </div>
