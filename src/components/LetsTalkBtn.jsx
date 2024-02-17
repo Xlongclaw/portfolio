@@ -53,10 +53,14 @@ const LetsTalkBtn = () => {
               seamless experience. I hope my work resonates with you.
             </h2>
             <div className="flex gap-2 justify-between">
-              <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
+              <a
+                href="/madhuresh-resume.pdf"
+                download={true}
+                className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2"
+              >
                 <span className="text-ASCENT">RESUME</span>
                 <Icon2.BsDownload size={25} />
-              </button>
+              </a>
 
               <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
                 <span className="text-ASCENT">PROJECTS</span>

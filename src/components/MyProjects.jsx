@@ -17,10 +17,9 @@ const MyProjects = () => {
       variants={parentVarient}
       initial="hidden"
       animate="visible"
-      className="grid relative gap-10 overflow-y-scroll overflow-x-hidden top-[-3.5rem] w-full h-[116%] pr-1 pb-4 hide-scroll
-      sm:top-0 sm:h-full sm:gap-10 sm:pr-0
-      md:grid-flow-row
-      lg:grid-flow-col lg:overflow-x-scroll lg:overflow-y-hidden"
+      className="grid relative gap-10 top-[-3.5rem] sm:top-0 hide-scroll w-full
+       sm:gap-10 overflow-y-scroll lg:overflow-y-hidden overflow-x-hidden lg:overflow-x-scroll 
+        h-[116%] sm:h-full pr-1 sm:pr-0 pb-4 md:grid-flow-row lg:grid-flow-col "
     >
       <div className="flex flex-wrap gap-6 w-full overflow-y-scroll justify-center hide-scroll overflow-hidden">
         {projectsData.map((project, i) => (

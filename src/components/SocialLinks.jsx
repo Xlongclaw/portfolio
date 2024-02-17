@@ -10,17 +10,19 @@ const SocialLinks = () => {
       {sociallinks.map((link, index) => (
         <motion.a
           key={index}
-          onMouseEnter={() => setDisplayLink(index)}
-          onMouseLeave={() => setDisplayLink(null)}
           href={link.link}
           className="flex gap-8 py-1 items-center cursor-pointer "
         >
-          <div className="flex gap-2 items-center hover:text-WHITE">
+          <div
+            onMouseEnter={() => setDisplayLink(index)}
+            onMouseLeave={() => setDisplayLink(null)}
+            className="flex gap-2  items-center hover:text-WHITE"
+          >
             <img src={link.image} className="w-[1.5rem]" alt="" />
             <span className="">{link.name}</span>
           </div>
           {displayLink === index && (
-            <span className="text-ASCENT sm:flex hidden xs:text-base text-xs sm:font-semibold font-normal items-center gap-2">
+            <span className="text-ASCENT pointer-events-none sm:flex hidden xs:text-base text-xs sm:font-semibold font-normal items-center gap-2">
               <Icon.BsArrowRight />
               <h4>{link.link}</h4>
             </span>

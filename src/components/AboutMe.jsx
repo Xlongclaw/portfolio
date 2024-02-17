@@ -45,12 +45,18 @@ const AboutMe = () => {
             transition={{ type: "spring", stiffness: 80 }}
             className="relative sm:w-48 w-44 z-10"
           >
-            <img
+            <div
+              style={{ backgroundImage: "url(profile.jpg)" }}
+              className="mb-8 sm:w-48 w-44 sm:h-48 h-44  relative z-20 bg-cover"
+            >
+              <div className="w-full h-full bg-black/20"></div>
+            </div>
+            {/* <img
               className="pb-8 sm:w-48 w-44 relative z-20
         "
-              src={require("../images/Profile-Image.png")}
+              src={require("../images/profile.jpg")}
               alt=""
-            />
+            /> */}
             <ProfileBgPattern />
           </motion.div>
           <HeroText />
@@ -76,10 +82,13 @@ const AboutMe = () => {
                 a seamless experience. I hope my work resonates with you.
               </h2>
               <div className="flex gap-2 justify-between">
-                <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
+                <a
+                  href="/madhuresh-resume.pdf"
+                  className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2"
+                >
                   <span className="text-ASCENT">RESUME</span>
                   <BsDownload size={20} />
-                </button>
+                </a>
 
                 <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
                   <span className="text-ASCENT">PROJECTS</span>

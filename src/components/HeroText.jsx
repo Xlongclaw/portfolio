@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedTextWord from "./AnimatedTextWord";
-import AnimatedTextSlideDown from "./AnimatedTextSlideDown";
 
 const HeroText = () => {
   return (
@@ -13,14 +12,14 @@ const HeroText = () => {
         <AnimatedTextWord text={"MY NAME IS MADHURESH"} />
       </h3>
       <h3 className="font-bold xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl tracking-[1px] mt-6">
-        <span className="xs:text-DARK-II text-WHITE/20">I AM INTO</span>{" "}
-        <span className="text-WHITE text-nowrap">UI/UX DESIGN</span>{" "}
+        <span className="xs:text-DARK-II text-WHITE/20">I AM A</span>{" "}
+        <span className="text-WHITE text-nowrap">UI/UX DESIGNER</span>{" "}
         {/* <AnimatedTextSlideDown /> */}
         <br />
         <span className="xs:text-DARK-II text-WHITE/20">AND </span>
-        <span>DEVELOPMENT</span>
-        <br /> <span className="xs:text-DARK-II text-WHITE/20">SINCE 2022</span>
+        <span>FULL STACK DEVELOPER</span>
         <span className="text-ASCENT">.</span>
+        <br /> <span className="xs:text-DARK-II text-WHITE/20"></span>
       </h3>
     </div>
   );
