@@ -4,6 +4,7 @@ import SkillContainer from "./SkillContainer";
 import skillsData from "../constants/skillsData";
 import backendDesignData from "../constants/backendDesignData";
 import frontendData from "../constants/fronendData";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
@@ -11,9 +12,9 @@ const Skills = () => {
   const [currentBackendDesignSkillIndex, setCurrentBackendDesignSkillIndex] =
     useState(0);
   return (
-    <div className=" flex sm:p-4 p-0 tracking-[1px] flex-col relative lg:top-0 top-[-2.8rem] w-full lg:h-[107%] h-[116%]">
+    <motion.div className=" flex sm:p-4 p-0 tracking-[1px] flex-col relative lg:top-0 top-[-2.8rem] w-full lg:h-[107%] h-[116%]">
       <div className="flex-col flex lg:hidden gap-6 overflow-y-scroll hide-scroll">
-        <h4 className="text-ASCENT text-xs font-medium mb-4  ">
+        <h4 className="text-ASCENT text-xs font-medium mb-4 ">
           FRONTEND, BACKEND + DESIGN
         </h4>
         {skillsData.map((skillData, index) => (
@@ -66,7 +67,7 @@ const Skills = () => {
         <Icon.BsChevronDoubleDown size={20} />
       </div>
       <div></div>
-    </div>
+    </motion.div>
   );
 };
 
