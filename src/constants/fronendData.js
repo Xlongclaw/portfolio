@@ -17,99 +17,57 @@ const frontendData = [
     image: require("../images/nextjs.png"),
     title: "NEXT JS FRAMEWORK",
     boldLine:
-      "Proficient with React.js framework and its core principles such as ",
+      "Proficient with Next.js app router and also its fundamentals such as",
     keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
+      "Advanced Routing Patterns - Parallel Routes, Intercepting Routes, Dynamic Routes",
+      "Creating APIs with Route Handlers.",
+      "Building User Authentication with NextAuth",
     ],
   },
   {
     image: require("../images/redux.png"),
     title: "REDUX",
     boldLine:
-      "Proficient with React.js framework and its core principles such as ",
-    keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
-    ],
+      "Super Efficient state management for larger projects using Redux ",
+    keyPoints: [],
   },
   {
     image: require("../images/tailwind.png"),
     title: "TAILWIND CSS",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
-    keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
-    ],
+    boldLine: "Better Styling with more speed.",
+    keyPoints: [],
   },
 
   {
     image: require("../images/typescript.png"),
     title: "TYPESCRIPT",
     boldLine:
-      "Proficient with React.js framework and its core principles such as ",
-    keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
-    ],
+      "To have a strong grip of projects for fast seamless development.",
+    keyPoints: [],
   },
   {
     image: require("../images/css.png"),
     title: "CSS3",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
+    boldLine: "To style the layout of web pages ",
     keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
+      "Familier with CSS Selectors,pseudo classes and elements",
+      "Good understanding of layout",
+      "good at adding responsiveness",
     ],
   },
   {
     image: require("../images/javascript.png"),
     title: "JAVASCRIPT",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
-    keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
-    ],
+    boldLine: "Adding functionality with easy understandable code",
+    keyPoints: [],
   },
   {
     image: require("../images/html5.png"),
     title: "HTML5",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
+    boldLine: "To Structure the webpage and its contents ",
     keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
+      "familier with HTML tags and attributes",
+      "Familier with HTML tables",
     ],
   },
 ];

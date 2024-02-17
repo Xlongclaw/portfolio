@@ -2,43 +2,27 @@ const backendDesignData = [
   {
     image: require("../images/nodejs.png"),
     title: "NODEJS",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
+    boldLine: "Developing Web servers with express JS",
     keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
+      "Very familiar with the Node.js API",
+      "Database integration",
+      "Effecient Data encryption using Bcrypt",
+      "Familier with async/await",
     ],
   },
   {
     image: require("../images/figma.png"),
     title: "FIGMA",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
-    keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
-    ],
+    boldLine: "Designing intereractive User interfaces using FIGMA",
+    keyPoints: [],
   },
   {
     image: require("../images/mongodb.png"),
     title: "MONGO DATABASE",
-    boldLine:
-      "Proficient with React.js framework and its core principles such as ",
+    boldLine: "MongoDB integration with help of mongoose. ",
     keyPoints: [
-      "Composition of Components",
-      "Reactivity",
-      "Virtual Document Object Model (DOM)",
-      "Using and Creating Custom React Hooks",
-      "Conditional Rendering",
-      "State Management",
+      "Creating models and querries",
+      "API creation for data transmission between SERVER DATABASE and FRONTEND",
     ],
   },
 ];
