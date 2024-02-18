@@ -8,17 +8,13 @@ import PatternBg from "./PatternBg";
 import LetsTalkBtnPhone from "./LetsTalkBtnPhone";
 import emailjs from "emailjs-com";
 
-import {
-  BsArrowLeft,
-  BsArrowRight,
-  BsDownload,
-  BsSendFill,
-} from "react-icons/bs";
+import { BsArrowLeft, BsSendFill } from "react-icons/bs";
 import {
   AiOutlineDribbble,
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineMail,
+  AiOutlineProfile,
 } from "react-icons/ai";
 import Toast from "./Toast";
 
@@ -83,17 +79,12 @@ const AboutMe = () => {
               </h2>
               <div className="flex gap-2 justify-between">
                 <a
-                  href="/madhuresh-resume.pdf"
+                  href="/resume-design.pdf"
                   className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2"
                 >
                   <span className="text-ASCENT">RESUME</span>
-                  <BsDownload size={20} />
+                  <AiOutlineProfile size={20} />
                 </a>
-
-                <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
-                  <span className="text-ASCENT">PROJECTS</span>
-                  <BsArrowRight size={20} />
-                </button>
               </div>
               <div className="flex mt-4 text-WHITE/70 flex-wrap">
                 <span className="flex text-xs items-center gap-1 hover:bg-ASCENT hover:text-black p-2 cursor-pointer">

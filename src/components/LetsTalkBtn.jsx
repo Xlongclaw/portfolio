@@ -54,18 +54,13 @@ const LetsTalkBtn = () => {
             </h2>
             <div className="flex gap-2 justify-between">
               <a
-                href="/madhuresh-resume.pdf"
+                href="/resume-design.pdf"
                 download={true}
                 className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2"
               >
-                <span className="text-ASCENT">RESUME</span>
-                <Icon2.BsDownload size={25} />
+                <span className="text-ASCENT flex items-center">RESUME</span>
+                <Icon.AiOutlineProfile size={20} />
               </a>
-
-              <button className="text-sm font-semibold text-ASCENT flex justify-end items-center gap-2 mt-4 hover:text-WHITE hover:gap-4 transition-all hover:bg-DARK-II p-2">
-                <span className="text-ASCENT">PROJECTS</span>
-                <Icon2.BsArrowRight size={25} />
-              </button>
             </div>
             <div className="flex mt-4 text-WHITE/70">
               <span className="flex text-xs items-center gap-1 hover:bg-ASCENT hover:text-black p-2 cursor-pointer">
