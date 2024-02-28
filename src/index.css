@@ -24,7 +24,7 @@ code {
   display: none;
 }
 .custom-scroll::-webkit-scrollbar {
-  background: #000;
-  height: 3px;
-  width: 3px;
+  background: #fff;
+  height: 5px;
+  width: 5px;
 }

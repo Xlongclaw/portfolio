@@ -11,7 +11,7 @@ const HeroText = () => {
       <h3 className="font-semibold xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl text-lg tracking-wider">
         <AnimatedTextWord text={"MY NAME IS MADHURESH"} />
       </h3>
-      <h3 className="font-bold xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl tracking-[1px] mt-6">
+      <h3 className="font-bold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl tracking-[1px] mt-6">
         <span className="xs:text-DARK-II text-WHITE/20">I AM A</span>{" "}
         <span className="text-WHITE text-nowrap">UI/UX DESIGNER</span>{" "}
         {/* <AnimatedTextSlideDown /> */}
