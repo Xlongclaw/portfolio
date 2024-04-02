@@ -6,10 +6,10 @@ import ProjectWrapperNew from "./ProjectWrapperNew";
 const MyProjects = () => {
   const parentVarient = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 0.1 * i },
-    }),
+      transition: { staggerChildren: 0.15},
+    },
   };
 
   return (
@@ -17,15 +17,15 @@ const MyProjects = () => {
       variants={parentVarient}
       initial="hidden"
       animate="visible"
-      className="grid relative gap-10 top-[-3.5rem] sm:top-0 hide-scroll w-full
-       sm:gap-10 overflow-y-scroll lg:overflow-y-hidden overflow-x-hidden lg:overflow-x-scroll 
-        h-[116%] sm:h-full pr-1 sm:pr-0 pb-4 md:grid-flow-row lg:grid-flow-col "
+      className=" flex flex-col items-cente relative -top-3"
     >
-      <div className="grid grid-cols-3 gap-6 w-full overflow-y-scroll justify-center custom-scroll overflow-hidden">
+      <h5 className="mb-2 font-semibold text-xl">PROJECTS</h5>
+      <h5 className="mb-4 text-xs text-zinc-600 font-medium">{`Explore my diverse array of projects showcasing creativity, innovation, and a passion for problem-solving.`.toUpperCase()}</h5>
+      <motion.div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-2 w-full overflow-y-auto justify-center custom-scroll overflow-x-hidden">
         {projectsData.map((project, i) => (
           <ProjectWrapperNew key={i} project={project} />
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
