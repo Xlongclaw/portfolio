@@ -21,7 +21,7 @@ const MyProjects = () => {
        sm:gap-10 overflow-y-scroll lg:overflow-y-hidden overflow-x-hidden lg:overflow-x-scroll 
         h-[116%] sm:h-full pr-1 sm:pr-0 pb-4 md:grid-flow-row lg:grid-flow-col "
     >
-      <div className="flex flex-wrap gap-6 w-full overflow-y-scroll justify-center custom-scroll overflow-hidden">
+      <div className="grid grid-cols-3 gap-6 w-full overflow-y-scroll justify-center custom-scroll overflow-hidden">
         {projectsData.map((project, i) => (
           <ProjectWrapperNew key={i} project={project} />
         ))}

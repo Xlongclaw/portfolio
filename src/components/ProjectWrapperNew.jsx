@@ -5,7 +5,7 @@ const ProjectWrapperNew = ({ project }) => {
   return (
     <div className="w-[100%] flex flex-col gap-2 sm:w-[21rem] ">
       <img
-        className="w-full sm:h-[15rem] h-[50vw] object-cover object-left-top border border-WHITE/10"
+        className="w-full sm:h-auto h-[50vw] object-cover object-left-top border border-WHITE/10"
         src={project.image}
         alt=""
       />
